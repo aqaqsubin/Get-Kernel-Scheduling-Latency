@@ -1,0 +1,1775 @@
+cpus=1
+       trace-cmd-4767  [000] 19958.336543691: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+       trace-cmd-4767  [000] 19958.336557331: sched_switch:         trace-cmd:4767 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19958.336561151: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19958.336562031: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19958.336666870: sched_switch:         node:1275 [120] S ==> trace-cmd:4767 [120]
+       trace-cmd-4767  [000] 19958.336668400: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+       trace-cmd-4767  [000] 19958.336668770: sched_switch:         trace-cmd:4767 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19958.336669640: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19958.336670200: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19958.336686120: sched_switch:         node:1275 [120] S ==> trace-cmd:4767 [120]
+       trace-cmd-4767  [000] 19958.336691330: sched_switch:         trace-cmd:4767 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19958.336825160: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.337820088: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.337877171: sched_wakeup:         rcu_sched:11 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.337904404: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.337954618: sched_switch:         rcu_preempt:10 [120] W ==> rcu_sched:11 [120]
+       rcu_sched-11    [000] 19958.338019711: sched_switch:         rcu_sched:11 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.338761466: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.338821441: sched_wakeup:         rcu_sched:11 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.338876099: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.338901401: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19958.338948236: sched_switch:         ksoftirqd/0:9 [120] S ==> rcu_sched:11 [120]
+       rcu_sched-11    [000] 19958.338990312: sched_switch:         rcu_sched:11 [120] W ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.339046079: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.339753089: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.339783541: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.339863479: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.340747153: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.340776516: sched_switch:         swapper/0:0 [120] R ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19958.340901896: sched_switch:         kworker/0:1:18 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.341762907: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.341771097: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19958.341895647: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19958.341906237: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.341966367: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.342451325: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.342452295: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.342453485: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19958.342460315: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+     ksoftirqd/0-9     [000] 19958.342489782: sched_switch:         ksoftirqd/0:9 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.342507832: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.342513172: sched_switch:         sshd:1181 [120] S ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19958.342514572: sched_switch:         kworker/0:1:18 [120] W ==> node:1275 [120]
+            node-1275  [000] 19958.342559372: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.354642538: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.354791933: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.354857635: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.392433053: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.392443363: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19958.392465783: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.405615734: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.405683553: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.405725823: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.455805108: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.455816238: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.455821098: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.467028964: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.467039374: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19958.467302174: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19958.467318994: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.467414134: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.467442046: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.467443726: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.467446516: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.468470508: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.468472258: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.468473978: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19958.468498838: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+     ksoftirqd/0-9     [000] 19958.468524175: sched_switch:         ksoftirqd/0:9 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.468552555: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.468569835: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.468579075: sched_switch:         sshd:1181 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.468581545: sched_switch:         rcu_preempt:10 [120] W ==> node:1275 [120]
+            node-1275  [000] 19958.468730195: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19958.468740235: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.468812005: sched_switch:         sshd:1181 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19958.468869056: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.469452231: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.469455711: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.469458761: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.505122842: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.505130612: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.505143062: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19958.505158302: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19958.505166522: sched_switch:         cpptools-srv:19803 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.505891909: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.505903029: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.505910999: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.542573270: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.542582030: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19958.542595500: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.555985547: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.555997827: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.556002577: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.587579192: sched_wakeup:         syslogd:574 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.587591162: sched_switch:         swapper/0:0 [120] R ==> syslogd:574 [120]
+         syslogd-574   [000] 19958.587612632: sched_switch:         syslogd:574 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.602512852: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.602546042: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.602603072: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.602610592: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.602842302: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19958.602879802: sched_switch:         node:1221 [120] S ==> node:1228 [120]
+            node-1228  [000] 19958.602891112: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1228  [000] 19958.602893332: sched_switch:         node:1228 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.602951972: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19958.602958272: sched_switch:         node:1221 [120] S ==> node:1230 [120]
+            node-1230  [000] 19958.602963762: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1230  [000] 19958.602965502: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.603132642: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19958.603147892: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.603231192: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.604056958: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.604088644: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.604117374: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.604123914: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.604238624: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19958.604270334: sched_switch:         node:1221 [120] S ==> node:1229 [120]
+            node-1229  [000] 19958.604276904: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1229  [000] 19958.604278864: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.604322704: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19958.604328024: sched_switch:         node:1221 [120] S ==> node:1231 [120]
+            node-1231  [000] 19958.604332674: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1231  [000] 19958.604334074: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.604488074: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19958.604500124: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.605326777: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.605975336: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.606003121: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.606032061: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.606038661: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606077715: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+            node-1221  [000] 19958.606166627: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19958.606197887: sched_switch:         node:1221 [120] S ==> node:1228 [120]
+            node-1228  [000] 19958.606204367: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1228  [000] 19958.606206347: sched_switch:         node:1228 [120] S ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.606211767: sched_switch:         tcf-agent:637 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606263237: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19958.606264297: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19958.606267157: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606289457: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1221  [000] 19958.606291347: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19958.606291987: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19958.606296747: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606715267: sched_wakeup:         node:1224 [120] success=1 CPU:000
+            node-1221  [000] 19958.606716497: sched_switch:         node:1221 [120] R ==> node:1224 [120]
+            node-1224  [000] 19958.606719657: sched_switch:         node:1224 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606721367: sched_wakeup:         node:1224 [120] success=1 CPU:000
+            node-1221  [000] 19958.606721877: sched_switch:         node:1221 [120] R ==> node:1224 [120]
+            node-1224  [000] 19958.606737877: sched_switch:         node:1224 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606762077: sched_wakeup:         node:1225 [120] success=1 CPU:000
+            node-1221  [000] 19958.606762647: sched_switch:         node:1221 [120] R ==> node:1225 [120]
+            node-1225  [000] 19958.606765367: sched_switch:         node:1225 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606766927: sched_wakeup:         node:1225 [120] success=1 CPU:000
+            node-1221  [000] 19958.606767357: sched_switch:         node:1221 [120] R ==> node:1225 [120]
+            node-1225  [000] 19958.606826887: sched_switch:         node:1225 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.606902087: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19958.606914477: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.606940952: sched_switch:         sshd:1181 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19958.606941006: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.607151896: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.607184226: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.607210436: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.607216456: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.607332796: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19958.607333916: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19958.607336526: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.607338236: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19958.607338706: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19958.607344726: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.607411666: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19958.607412586: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19958.607414746: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.607416326: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19958.607416766: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19958.607421136: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.607557441: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19958.607569971: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.607642511: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.608297565: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.608329420: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.608353960: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.608359840: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.608478979: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19958.608480239: sched_switch:         node:1221 [120] R ==> node:1228 [120]
+            node-1228  [000] 19958.608482869: sched_switch:         node:1228 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.608484629: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19958.608485079: sched_switch:         node:1221 [120] R ==> node:1228 [120]
+            node-1228  [000] 19958.608493909: sched_switch:         node:1228 [120] S ==> node:1221 [120]
+            node-1221  [000] 19958.608586449: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19958.608596269: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.608989022: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.656299535: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.656314565: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.656327785: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.667969063: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.667984353: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19958.668084093: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.668441844: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.668443844: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.668447434: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.669433933: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.669435203: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.669437333: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.670432897: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.670434777: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.670436087: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.693977984: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.694002894: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.694011953: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19958.694069323: sched_switch:         cpptools:19776 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19958.694114493: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.707132242: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.707204759: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.707241712: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.757341689: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.757362219: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.757375069: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.807638628: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.807648248: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.807650378: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.807658968: sched_switch:         swapper/0:0 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19958.807670528: sched_switch:         kworker/u2:0:2056 [120] W ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19958.807674168: sched_switch:         kworker/0:1:18 [120] W ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.807681998: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.826875007: sched_wakeup:         node:1221 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.826887717: sched_switch:         swapper/0:0 [120] R ==> node:1221 [120]
+            node-1221  [000] 19958.826944287: sched_switch:         node:1221 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.844155052: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.844166732: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19958.844188832: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.858682323: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.858694163: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.858702843: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.868316652: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.868328392: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19958.868425392: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.868443981: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.868445821: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.868449291: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.870310431: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.870338607: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.870414316: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.870465036: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.870466896: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19958.870468136: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.908801143: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.908814053: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.908821953: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.912920684: sched_wakeup:         lighttpd:613 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.912929854: sched_switch:         swapper/0:0 [120] R ==> lighttpd:613 [120]
+        lighttpd-613   [000] 19958.912941344: sched_switch:         lighttpd:613 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.958922592: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.958935802: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19958.958943102: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.977703769: sched_wakeup:         node:1234 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.977715379: sched_switch:         swapper/0:0 [120] R ==> node:1234 [120]
+            node-1234  [000] 19958.977732089: sched_switch:         node:1234 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.995271077: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.995283537: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19958.995303917: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19958.999535405: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19958.999572093: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.999630793: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19958.999632943: sched_switch:         sshd:1181 [120] R ==> node:1275 [120]
+            node-1275  [000] 19958.999850993: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19958.999931923: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.005228516: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.005229736: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.005239816: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19959.005261458: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19959.005280604: sched_switch:         cpptools-srv:19803 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.009003718: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.009008548: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.009014538: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.014570366: sched_wakeup:         connmand:512 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.014582636: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.014588176: sched_switch:         swapper/0:0 [120] R ==> connmand:512 [120]
+        connmand-512   [000] 19959.014688941: sched_switch:         connmand:512 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.014721051: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.041238225: sched_wakeup:         rngd:509 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.041247345: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.041254165: sched_switch:         swapper/0:0 [120] R ==> rngd:509 [120]
+            rngd-509   [000] 19959.041258245: sched_switch:         rngd:509 [120] S ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19959.041291693: sched_switch:         ksoftirqd/0:9 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.059119724: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.059135184: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.059146724: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.069156308: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.069367443: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.069457006: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            node-1275  [000] 19959.069459276: sched_switch:         node:1275 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.069461876: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.070964860: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.071007673: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.071121814: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.071903696: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.071947666: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.072064091: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.109272850: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.109287930: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.109298250: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.126468109: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.126476809: sched_switch:         swapper/0:0 [120] R ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19959.126752339: sched_switch:         kworker/0:1:18 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.146608598: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.146618338: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.146639448: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.159401805: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.159415785: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.159427295: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.169997667: sched_wakeup:         node:1297 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.170005587: sched_switch:         swapper/0:0 [120] R ==> node:1297 [120]
+            node-1297  [000] 19959.170014367: sched_switch:         node:1297 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.209529706: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.209549926: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.209562366: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.216420183: sched_wakeup:         tcf-agent:633 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.216435603: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:633 [120]
+       tcf-agent-633   [000] 19959.216488883: sched_switch:         tcf-agent:633 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.243872573: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.244073042: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.244229037: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.259679032: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.259695442: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.259709102: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.269229218: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.269236638: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.269320808: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.269431214: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.269432354: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.269434944: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.271244049: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.271244849: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.271246279: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.272621845: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.272624195: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.272626355: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.297644619: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.297657259: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.297677599: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.304228306: sched_wakeup:         init:1 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.304234976: sched_switch:         swapper/0:0 [120] R ==> init:1 [120]
+            init-1     [000] 19959.304258186: sched_switch:         init:1 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.304273016: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.304273906: sched_switch:         swapper/0:0 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.304312356: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.309783532: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.309793242: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.309801472: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.359917811: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.359934201: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.359946231: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.381295779: sched_wakeup:         tcf-agent:633 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.381312899: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:633 [120]
+       tcf-agent-633   [000] 19959.381371829: sched_wakeup:         tcf-agent:635 [120] success=1 CPU:000
+       tcf-agent-633   [000] 19959.381466552: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+       tcf-agent-633   [000] 19959.381531672: sched_switch:         tcf-agent:633 [120] S ==> tcf-agent:635 [120]
+       tcf-agent-635   [000] 19959.381539632: sched_wakeup:         tcf-agent:633 [120] success=1 CPU:000
+       tcf-agent-635   [000] 19959.381541262: sched_switch:         tcf-agent:635 [120] S ==> tcf-agent:633 [120]
+       tcf-agent-633   [000] 19959.381543992: sched_wakeup:         tcf-agent:635 [120] success=1 CPU:000
+       tcf-agent-633   [000] 19959.381545812: sched_switch:         tcf-agent:633 [120] S ==> tcf-agent:635 [120]
+       tcf-agent-635   [000] 19959.381549232: sched_wakeup:         tcf-agent:633 [120] success=1 CPU:000
+       tcf-agent-635   [000] 19959.381550352: sched_switch:         tcf-agent:635 [120] S ==> tcf-agent:633 [120]
+       tcf-agent-633   [000] 19959.381552402: sched_wakeup:         tcf-agent:635 [120] success=1 CPU:000
+       tcf-agent-633   [000] 19959.381553742: sched_switch:         tcf-agent:633 [120] S ==> tcf-agent:635 [120]
+       tcf-agent-635   [000] 19959.381556102: sched_switch:         tcf-agent:635 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.381560452: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.381642169: sched_wakeup:         tcf-agent:635 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.381662619: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:635 [120]
+       tcf-agent-635   [000] 19959.381666669: sched_wakeup:         tcf-agent:633 [120] success=1 CPU:000
+       tcf-agent-635   [000] 19959.381668109: sched_switch:         tcf-agent:635 [120] S ==> tcf-agent:633 [120]
+       tcf-agent-633   [000] 19959.381738890: sched_wakeup:         tcf-agent:635 [120] success=1 CPU:000
+       tcf-agent-633   [000] 19959.381741620: sched_switch:         tcf-agent:633 [120] S ==> tcf-agent:635 [120]
+       tcf-agent-635   [000] 19959.381744520: sched_switch:         tcf-agent:635 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.383675764: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.383679624: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.383686024: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.384453045: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.384458195: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.384462155: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.385448575: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.385452765: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.385455955: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.410922415: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.410934125: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.410944375: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.418433523: sched_wakeup:         node:1282 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.418559651: sched_switch:         swapper/0:0 [120] R ==> node:1282 [120]
+            node-1282  [000] 19959.418671879: sched_switch:         node:1282 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.433433761: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.433459379: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.433506179: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.433510899: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.433633389: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+            node-1275  [000] 19959.433634439: sched_switch:         node:1275 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.433638389: sched_wakeup:         bash:1329 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.433639399: sched_switch:         kworker/u2:0:2056 [120] W ==> bash:1329 [120]
+            bash-1329  [000] 19959.433650909: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+            bash-1329  [000] 19959.433824319: sched_switch:         bash:1329 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.433825989: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.433893809: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.433936569: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.434004809: sched_switch:         sshd:1181 [120] S ==> bash:4769 [120]
+      cyclictest-4769  [000] 19959.434545039: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434545959: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434547399: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434548369: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434574499: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434575759: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434576119: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434576959: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434577759: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434594559: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1275  [000] 19959.434609049: sched_switch:         node:1275 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.434636849: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434672668: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434673268: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434674378: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434674988: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434691838: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434693348: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434693678: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434694628: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434695088: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434706278: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434707438: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434707758: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434708468: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434708908: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434719788: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434725368: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434725698: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434726448: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434726888: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434737538: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434738558: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.434738918: sched_switch:         cyclictest:4769 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.434739628: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.434740068: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.434750148: sched_switch:         node:1275 [120] S ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.434753278: sched_switch:         cyclictest:4769 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.434759898: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.434761648: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.434763884: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.434763902: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.434763955: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.435457331: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.435458541: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.435459991: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.436023978: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.436154564: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.436194042: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.436266952: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.436363460: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.436470097: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.436472137: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.436473427: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.437022971: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.437261491: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.437294860: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.437356848: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.437438887: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.438035322: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.438260049: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.438291548: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.438350111: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.438427480: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.439022239: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.439239727: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.439270215: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.439326696: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.439401346: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.440017352: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.440096087: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.440318753: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.440483969: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.440491839: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.440541169: sched_switch:         sshd:1181 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.440542079: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.440543409: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.440547519: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.440824390: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.440847010: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.440865510: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.440877330: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.440894930: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.440899050: sched_switch:         sshd:1181 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.440911760: sched_switch:         trace-cmd:4768 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.440951700: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.440952640: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.440953740: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.440954860: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.442122874: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.442335497: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.442360557: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.442407084: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.442446744: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.443007634: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.443208934: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.443237097: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.443289368: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.443358433: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.444001411: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.444224363: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.444250470: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.444298963: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.444363095: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.444990503: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.445060494: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.445258472: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.445315246: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.445379036: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.445415218: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.445440643: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.445454328: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            node-1275  [000] 19959.445489517: sched_switch:         node:1275 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.445490937: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.445491757: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.445492867: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.445497627: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.445995096: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.446094245: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.446124063: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.446179286: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.446252493: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.446856244: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.446944929: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.447052788: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.447117116: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.447146549: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.447201433: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.447273610: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.447871118: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.447948845: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.448083229: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.448114907: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.448373001: sched_switch:         cpptools:19776 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.448406569: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.448423227: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.448449624: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.448466467: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.448994122: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.449165004: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.449189586: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.449234503: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.449293844: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.449971920: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.450157782: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.450179663: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.450220255: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.450273816: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.450754441: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.450960233: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.451050803: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.451393456: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.451451049: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.451530459: sched_switch:         sshd:1181 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.451531489: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.451532799: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.451537319: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.451549109: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.451549769: sched_switch:         swapper/0:0 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.451581909: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.451828639: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.451853449: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.451875305: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.451899305: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.451903605: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.451972635: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.451973605: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.451974835: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.451975695: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.452830633: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.452838063: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.452838853: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.452840193: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.452841883: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.453818948: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.453824728: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.453825188: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.453826058: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.453826858: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.455722166: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.455862597: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.456208883: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.456290748: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.456355710: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.456389081: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.456414678: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.456463266: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            node-1275  [000] 19959.456465776: sched_switch:         node:1275 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.456467916: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.456469196: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.456470556: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.456474676: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.456859310: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.456863430: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.456863960: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.456864990: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.456866000: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.457825995: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.457843787: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.457908451: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19959.458007433: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.458029280: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.458069917: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.458123473: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.458760395: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.458792510: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.458849980: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.458930944: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.458998673: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.459019200: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.459057657: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.459107783: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.459841099: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.459848569: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.459849319: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.459850689: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.459852439: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.460819228: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.460822728: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.460823208: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.460824038: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.460824868: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.461308861: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.461545168: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.461629354: sched_wakeup:         node:1275 [120] success=1 CPU:000
+       tcf-agent-637   [000] 19959.461816987: sched_switch:         tcf-agent:637 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.461902994: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+            node-1275  [000] 19959.462152626: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.462221415: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.462429806: sched_switch:         sshd:1181 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.462436976: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.462452498: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.462456368: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.462467658: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.462468358: sched_switch:         swapper/0:0 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.462499338: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.462823039: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.462846689: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.462867136: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.462885256: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.462889166: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.462931006: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.462931956: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.462933106: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.462934156: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.463823188: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.463829188: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.463829788: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.463830658: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.463831478: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.464818145: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.464823665: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.464824155: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.464824995: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.464825715: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.465817910: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.465821150: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.465821590: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.465822420: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.465823190: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.466720136: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.466827840: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.466836217: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.466841477: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.466849517: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.466851317: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.466852197: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.466885487: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.466886167: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.466887097: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.466888037: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.467430861: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.467431931: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.467433441: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.468104125: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.468252959: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.468297780: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.468380934: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.468464572: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.468682633: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.468707472: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.468774768: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.468844682: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.468847592: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.468847992: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.468848792: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.468849532: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.468941947: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.468944777: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.468947247: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.469433285: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.469434975: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.469436295: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.470080800: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.470179237: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.470423357: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.470683093: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            node-1275  [000] 19959.470901641: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.470920783: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.471161265: sched_switch:         sshd:1181 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.471177072: sched_switch:         rcu_preempt:10 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.471212581: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.471219085: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.471230904: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.471246312: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.471476669: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.471477899: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.471488849: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.471490209: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19959.471500609: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+     ksoftirqd/0-9     [000] 19959.471516086: sched_switch:         ksoftirqd/0:9 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.471534286: sched_switch:         trace-cmd:4768 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.471535886: sched_switch:         rcu_preempt:10 [120] W ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.471552906: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.471556586: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.471658463: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.471660073: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.471733942: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.471743792: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.471819629: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.471823179: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.471824089: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.471825369: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.471826209: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.472433535: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.472435255: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.472436545: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.473092965: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.473185293: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.473414358: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.473811276: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.473828793: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.473860613: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.473889264: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.474832468: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.474838448: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.474838958: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.474839858: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.474840928: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.475818131: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.475823671: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.475824071: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.475824861: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.475825591: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.476826011: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.476829381: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.476829801: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.476830581: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.476831301: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.476906803: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.476912223: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.476924463: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.476928553: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.476930223: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.476930993: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.476964202: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.477430871: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.477431901: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.477433331: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.478175933: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.478281479: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.478313554: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.478372818: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.478450052: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.478461937: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.478462537: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.478463897: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.479030342: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.479152748: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.479189658: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.479258073: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.479348461: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.479465863: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.479466853: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.479467673: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.480006139: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.480233466: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.480265182: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.480324151: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.480377595: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.481117686: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.481298663: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.481432857: sched_switch:         swapper/0:0 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.481445495: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.481457055: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.481458475: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.481461995: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.482031538: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.482179256: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.482355248: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.482441895: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.482457798: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.482459758: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.482463588: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.483024551: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.483234543: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.483263960: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.483318564: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.483390780: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.483459782: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.483461942: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.483546772: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.484018583: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.484230367: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.484260351: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.484315505: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.484365588: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.485065772: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.485280801: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.485306076: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.485353198: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.485396033: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.486012524: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.486236266: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.486262675: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.486311553: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.486356050: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.487034679: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.487105017: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.487303986: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.487383792: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.487440634: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.487456926: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.487460366: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.487461286: sched_switch:         kworker/u2:0:2056 [120] W ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.487463986: sched_switch:         rcu_preempt:10 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.487568796: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.487569796: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.487571066: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.487575836: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.487995381: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.488094588: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.488124483: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.488179744: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.488252812: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.488856106: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.488943134: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.489049057: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.489112019: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.489140802: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.489194340: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.489265183: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.489855286: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.489942723: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.490048494: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.490110810: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.490139522: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.490193035: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.490263528: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.490986965: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.491180025: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.491202826: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.491245190: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.491301349: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.491970505: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.492156045: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.492177881: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.492237022: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.492280109: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.492299184: sched_switch:         cyclictest:4770 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.492363579: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.492404305: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.492804401: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.492942705: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.493130097: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.493372436: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.493388894: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.493418214: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.493444541: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.493820338: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.493826518: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.493827068: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.493828028: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.493828988: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.494819544: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.494825464: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.494825874: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.494826704: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.494827554: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.495854708: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.495862458: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.495863278: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.495864718: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.495866478: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.496827152: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.496835202: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.496836012: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.496837442: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.496839202: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.497854474: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.497912667: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.498077938: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.498132569: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.498186704: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.498217879: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.498245226: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.498337130: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.498348248: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.498368477: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.498395063: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.498450369: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.498451459: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.498452839: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.498819646: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.498822816: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.498823346: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.498824296: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.498825216: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.499826901: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.499844181: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.499910589: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19959.500010734: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.500032932: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.500074287: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.500128993: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.500761286: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.500793308: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.500850418: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.500931548: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.500999268: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.501019738: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.501057885: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.501108130: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.501866875: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.501874075: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.501874555: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.501875555: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.501876535: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.502819011: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.502822741: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.502823171: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.502824051: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.502824901: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.503683194: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.503834579: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.503847817: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.503851127: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.503919617: sched_switch:         node:1275 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.503936817: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.503937537: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.503938757: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.503939857: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.504822586: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.504826706: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.504827216: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.504828236: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.504829056: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.505583488: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.505650726: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.505793401: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19959.505847429: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+        cpptools-19775 [000] 19959.505854759: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19959.505861819: sched_switch:         cpptools-srv:19803 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.505862519: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.505863429: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.505864399: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.506820440: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.506826730: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.506827270: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.506828140: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.506828940: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.507818834: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.507822464: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.507822934: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.507823744: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.507824684: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.508495406: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.508681002: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.508743757: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.508814736: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.508842799: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.508852812: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.508856592: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.508891332: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.508892182: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.508893272: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.508894282: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.509432095: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.509433215: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.509434735: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.510116286: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.510266811: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.510312139: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.510396093: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.510470525: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.510716671: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.510741296: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.510807598: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.510846159: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.510849309: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.510849809: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.510850699: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.510851549: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.511430180: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.511431490: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.511432720: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.512096032: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.512193298: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.512323121: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.512458173: sched_switch:         tcf-agent:637 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.512804996: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.512823367: sched_switch:         cyclictest:4770 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.513109059: sched_switch:         sshd:1181 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.513116709: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.513130673: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.513148915: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.513835207: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.513840757: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.513841797: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.513850737: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.513853957: sched_switch:         cyclictest:4770 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.513868457: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.513870247: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.513871697: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.513949572: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.513955982: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.514024022: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.514032162: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.514087602: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.514585354: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.514603774: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.514625194: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.514629874: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.514691744: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.514835694: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.514844604: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.514846294: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.514848264: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.514849874: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.514899398: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.514919990: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.514967920: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.514972460: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.515018020: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.515829162: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.515837492: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.515839062: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.515841252: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.515842962: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.516831156: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.516837796: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.516838466: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.516839486: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.516840706: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.517832172: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.517840482: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.517841332: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.517842822: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.517844662: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.518828903: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.518830373: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.518841123: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.518877343: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.518884323: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.518889013: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.518889983: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.518992623: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.518993603: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.518994953: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.518996353: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.519443209: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.519445139: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.519449119: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.520302664: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.520390437: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.520417191: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.520456616: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.520456616: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.520457896: sched_switch:         cyclictest:4770 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.520459596: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.520463716: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.521030959: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.521153950: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.521190914: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.521259636: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.521350370: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.521467119: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.521468469: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.521469549: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.522005417: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.522231033: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.522262563: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.522348113: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.522407501: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.522433553: sched_switch:         cyclictest:4770 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.522455325: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.522470105: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.523022371: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.523240045: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.523270535: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.523327280: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.523401941: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.524015888: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.524162447: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.524360798: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.524440670: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.524453794: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.524454834: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.524458424: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.525012188: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.525218000: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.525246811: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.525300250: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.525370871: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.525460068: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.525464788: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.525598328: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.525610048: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.525686658: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.525829710: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.525856920: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.525879927: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.525901347: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.525905557: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.525954697: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.525955667: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.525957017: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.525957977: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.527089961: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.527295127: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.527319224: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.527363996: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.527423197: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.528003196: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.528198195: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.528225455: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.528276112: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.528343018: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.528996159: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.529065254: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.529261037: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.529322111: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.529385757: sched_switch:         cyclictest:4769 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.529422059: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.529440422: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.529455775: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            node-1275  [000] 19959.529488455: sched_switch:         node:1275 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.529490055: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.529490885: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.529492145: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.529497275: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.529995987: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.530095048: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.530124872: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.530180050: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.530253173: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.530856007: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.530943218: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.531048903: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.531111454: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.531140149: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.531193498: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.531264164: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.531855717: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.531947110: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.532057493: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.532122576: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.532152598: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.532233914: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.532289165: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+      cyclictest-4770  [000] 19959.532314160: sched_switch:         cyclictest:4770 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.532372841: sched_switch:         trace-cmd:4768 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.532428742: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.532831317: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.532840067: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.532841017: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.532842607: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.532844627: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.533821028: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.533827828: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.533828378: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.533829418: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.533830408: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.534859033: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.534927077: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.535119955: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.535350395: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.535416459: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.535504981: sched_switch:         sshd:1181 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.535506121: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.535507451: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.535512341: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.535828194: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.535856004: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.535878323: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.535900103: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.535904753: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.535947853: sched_switch:         node:1275 [120] S ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.535948893: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.535950363: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.535951663: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.536829789: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.536838199: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.536839089: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.536840589: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.536842329: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.537820313: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.537827063: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.537827563: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.537828553: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7fc537606930, rmtp: 0x00000000
+      cyclictest-4770  [000] 19959.537829463: sched_switch:         cyclictest:4770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.538819470: sched_wakeup:         cyclictest:4770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.538823390: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4770 [120]
+      cyclictest-4770  [000] 19959.538823850: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4770  [000] 19959.538852040: sched_switch:         cyclictest:4770 [120] Z ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.539770438: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.539978429: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.540003222: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.540062072: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.540126096: sched_switch:         cyclictest:4769 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.540162415: sched_switch:         rcu_preempt:10 [120] W ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.540195460: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.540225091: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.540327678: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.540458176: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.540459316: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.540460996: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.541813829: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.541845454: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.541926047: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.542774771: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.542807171: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.542891530: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.545533553: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.545793311: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.546040819: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.546114981: sched_switch:         node:1275 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.546344894: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.546663381: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.546702415: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.546762470: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.546779371: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.546796568: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1275  [000] 19959.546857330: sched_switch:         node:1275 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.546876393: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.550166981: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.550176781: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.550181811: sched_switch:         cyclictest:4769 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.563273734: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.563287504: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.563297234: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.599452188: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.599461038: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.599484258: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.600245168: sched_wakeup:         cyclictest:4769 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.600253208: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4769 [120]
+      cyclictest-4769  [000] 19959.600378108: sched_wakeup:         bash:1329 [120] success=1 CPU:000
+      cyclictest-4769  [000] 19959.600379928: sched_switch:         cyclictest:4769 [120] X ==> bash:1329 [120]
+            bash-1329  [000] 19959.600508767: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+            bash-1329  [000] 19959.600514687: sched_switch:         bash:1329 [120] S ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19959.600518457: sched_wakeup:         node:1275 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19959.600519657: sched_switch:         kworker/u2:0:2056 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.600633057: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.600635030: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.600635047: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.600635101: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.601737631: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.601773295: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.601869360: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.602781585: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.602845659: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.602874636: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19959.602930951: sched_switch:         ksoftirqd/0:9 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.603001849: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.603769927: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.603801350: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.603885054: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.604760363: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.604791928: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.604873254: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.605847362: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.606003891: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.606462756: sched_wakeup:         node:1279 [120] success=1 CPU:000
+            node-1275  [000] 19959.606464346: sched_switch:         node:1275 [120] R ==> node:1279 [120]
+            node-1279  [000] 19959.606467956: sched_switch:         node:1279 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.606469516: sched_wakeup:         node:1279 [120] success=1 CPU:000
+            node-1275  [000] 19959.606470006: sched_switch:         node:1275 [120] R ==> node:1279 [120]
+            node-1279  [000] 19959.608816952: sched_switch:         node:1279 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.609141255: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.609160202: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.609439062: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.609470301: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.610013719: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.610054556: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.610081676: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.610090156: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.610150946: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.613375892: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.613386562: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.613394792: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.614295008: sched_wakeup:         node:1298 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.614642588: sched_switch:         swapper/0:0 [120] R ==> node:1298 [120]
+            node-1298  [000] 19959.614811701: sched_switch:         node:1298 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.664678973: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.664694813: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.664708693: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.670228801: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.670238341: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.670514161: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.670517181: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.670542281: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.670584913: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.670585002: sched_switch:         sshd:1181 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.670585037: sched_switch:         trace-cmd:4768 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.670585073: sched_switch:         rcu_preempt:10 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.670586187: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.672022657: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.672064752: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.672103227: sched_switch:         swapper/0:0 [120] R ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19959.672179607: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+     ksoftirqd/0-9     [000] 19959.672235421: sched_switch:         ksoftirqd/0:9 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.672263045: sched_switch:         rcu_preempt:10 [120] W ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.672467423: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.672469363: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+            sshd-1181  [000] 19959.672477833: sched_switch:         sshd:1181 [120] S ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.672479503: sched_switch:         rcu_preempt:10 [120] W ==> node:1275 [120]
+            node-1275  [000] 19959.672658720: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19959.672660770: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19959.672726960: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.672742700: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.695314309: sched_wakeup:         node:19770 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.695335429: sched_switch:         swapper/0:0 [120] R ==> node:19770 [120]
+            node-19770 [000] 19959.695357129: sched_switch:         node:19770 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.714783719: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.714799239: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.714810769: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.749588813: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.749604913: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.749629383: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.764899608: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.764913568: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.764924778: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.775738683: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.775750323: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.775846143: sched_wakeup:         cpptools:19772 [120] success=1 CPU:000
+            node-1275  [000] 19959.775847763: sched_switch:         node:1275 [120] R ==> cpptools:19772 [120]
+        cpptools-19772 [000] 19959.775868303: sched_switch:         cpptools:19772 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.775882953: sched_wakeup:         cpptools:19772 [120] success=1 CPU:000
+            node-1275  [000] 19959.775883613: sched_switch:         node:1275 [120] R ==> cpptools:19772 [120]
+        cpptools-19772 [000] 19959.775895973: sched_wakeup:         cpptools:19784 [120] success=1 CPU:000
+        cpptools-19772 [000] 19959.775898593: sched_switch:         cpptools:19772 [120] S ==> cpptools:19784 [120]
+        cpptools-19784 [000] 19959.775906383: sched_switch:         cpptools:19784 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.775937253: sched_wakeup:         node:1290 [120] success=1 CPU:000
+            node-1275  [000] 19959.775937873: sched_switch:         node:1275 [120] R ==> node:1290 [120]
+            node-1290  [000] 19959.775940763: sched_switch:         node:1290 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.775942643: sched_wakeup:         node:1290 [120] success=1 CPU:000
+            node-1275  [000] 19959.775943073: sched_switch:         node:1275 [120] R ==> node:1290 [120]
+            node-1290  [000] 19959.775954753: sched_switch:         node:1290 [120] S ==> node:1275 [120]
+            node-1275  [000] 19959.776017533: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.815039987: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.815056877: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.815070487: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.865185479: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.865202389: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.865214389: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.870129282: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.870142572: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19959.870243012: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.871261779: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.871265469: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.871266849: sched_switch:         swapper/0:0 [120] R ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19959.871274509: sched_switch:         kworker/0:1:18 [120] W ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.871277319: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.871746328: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.871774097: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.871847947: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.872724052: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.872777381: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19959.872842272: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19959.872886141: sched_switch:         rcu_preempt:10 [120] W ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19959.872986302: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.899706261: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.899718091: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19959.899738661: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.914943739: sched_wakeup:         lighttpd:613 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.914951619: sched_switch:         swapper/0:0 [120] R ==> lighttpd:613 [120]
+        lighttpd-613   [000] 19959.914963459: sched_switch:         lighttpd:613 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.915291628: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.915302988: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.915309228: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19959.965404123: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19959.965415863: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19959.965421553: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.007253828: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.007255788: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.007267698: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19960.007280548: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19960.007295208: sched_switch:         cpptools-srv:19803 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.015505016: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.015517206: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.015524086: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.050953948: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.050969828: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.050985528: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.065754931: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.065945424: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.066049579: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.070657168: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.070960077: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.071171881: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.071812815: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.071846910: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.071937697: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.072792319: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.072825731: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.072913182: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.073780767: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.073814143: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.073900308: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.085505221: sched_wakeup:         rngd:509 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.085530591: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.085571834: sched_switch:         swapper/0:0 [120] R ==> rngd:509 [120]
+            rngd-509   [000] 19960.085577794: sched_switch:         rngd:509 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.085639804: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.085641854: sched_switch:         sshd:1181 [120] R ==> node:1221 [120]
+            node-1221  [000] 19960.085903914: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19960.085941844: sched_switch:         node:1221 [120] S ==> node:1230 [120]
+            node-1230  [000] 19960.085954254: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1230  [000] 19960.085956344: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.086022704: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19960.086028874: sched_switch:         node:1221 [120] S ==> node:1229 [120]
+            node-1229  [000] 19960.086034214: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1229  [000] 19960.086035744: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.086222444: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.086321344: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.086949660: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.086990755: sched_wakeup:         ksoftirqd/0:9 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.087028762: sched_switch:         swapper/0:0 [120] R ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19960.087400327: sched_switch:         kworker/0:1:18 [120] W ==> ksoftirqd/0:9 [120]
+     ksoftirqd/0-9     [000] 19960.087443515: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+     ksoftirqd/0-9     [000] 19960.087494828: sched_switch:         ksoftirqd/0:9 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.087525378: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.087531468: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.087666877: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19960.087698087: sched_switch:         node:1221 [120] S ==> node:1231 [120]
+            node-1231  [000] 19960.087705037: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1231  [000] 19960.087707307: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.087730817: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1221  [000] 19960.087780467: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19960.087786117: sched_switch:         node:1221 [120] S ==> node:1228 [120]
+            node-1228  [000] 19960.087791277: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            node-1228  [000] 19960.087793097: sched_switch:         node:1228 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19960.087831917: sched_switch:         trace-cmd:4768 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.087986187: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.087998027: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.088075087: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.088755475: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.088787034: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.088816304: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.088822714: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.088935593: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19960.088936833: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19960.088940633: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.088942443: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19960.088942953: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19960.088949353: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.089019913: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19960.089020783: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19960.089023793: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.089025363: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19960.089025783: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19960.089030343: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.089182447: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.089194427: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.089270157: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.090010406: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.090041636: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.090081531: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.090090581: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.090205881: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19960.090207241: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19960.090209841: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.090211651: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19960.090212161: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19960.090218411: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.090286310: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19960.090287230: sched_switch:         node:1221 [120] R ==> node:1228 [120]
+            node-1228  [000] 19960.090289440: sched_switch:         node:1228 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.090291020: sched_wakeup:         node:1228 [120] success=1 CPU:000
+            node-1221  [000] 19960.090291450: sched_switch:         node:1221 [120] R ==> node:1228 [120]
+            node-1228  [000] 19960.090295760: sched_switch:         node:1228 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.090418140: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.090429320: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.090487788: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.091075487: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.091105807: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.091133377: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.091139757: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.091251497: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19960.091252737: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19960.091255577: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.091257337: sched_wakeup:         node:1230 [120] success=1 CPU:000
+            node-1221  [000] 19960.091257797: sched_switch:         node:1221 [120] R ==> node:1230 [120]
+            node-1230  [000] 19960.091266447: sched_switch:         node:1230 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.091360587: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.091370557: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.091439267: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.116072505: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.116097015: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.116111845: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.117290475: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.117329635: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.117383105: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.117390165: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.117603155: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19960.117604805: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19960.117629535: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1229  [000] 19960.117633545: sched_switch:         node:1229 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19960.117672995: sched_switch:         trace-cmd:4768 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.117675635: sched_wakeup:         node:1229 [120] success=1 CPU:000
+            node-1221  [000] 19960.117676155: sched_switch:         node:1221 [120] R ==> node:1229 [120]
+            node-1229  [000] 19960.117689015: sched_switch:         node:1229 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.117823975: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.117835495: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.118255975: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.166206385: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.166220515: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.166233615: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.170977359: sched_wakeup:         node:1297 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.170988949: sched_switch:         swapper/0:0 [120] R ==> node:1297 [120]
+            node-1297  [000] 19960.170999579: sched_switch:         node:1297 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.201077686: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.201089556: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.201112246: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.216321938: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.216335118: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.216343308: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.216422474: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.216452067: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.216507947: sched_wakeup:         node:1221 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.216514727: sched_switch:         sshd:1181 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.216742327: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19960.216743717: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19960.216748117: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.216749887: sched_wakeup:         node:1231 [120] success=1 CPU:000
+            node-1221  [000] 19960.216750407: sched_switch:         node:1221 [120] R ==> node:1231 [120]
+            node-1231  [000] 19960.216764687: sched_switch:         node:1231 [120] S ==> node:1221 [120]
+            node-1221  [000] 19960.216897847: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1221  [000] 19960.216912577: sched_switch:         node:1221 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.216988417: sched_switch:         sshd:1181 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.246497272: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.246512632: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.246553302: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.267503562: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.267527265: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.267545428: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.270847024: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.271025952: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.271195812: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.271837082: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.271867552: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.271948281: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.272771520: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.272803348: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.272888568: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.273762647: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.273794436: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.273876070: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.278536912: sched_wakeup:         node:1309 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.278538932: sched_wakeup:         node:1308 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.278546542: sched_switch:         swapper/0:0 [120] R ==> node:1309 [120]
+            node-1309  [000] 19960.278559972: sched_switch:         node:1309 [120] S ==> node:1308 [120]
+            node-1308  [000] 19960.278565272: sched_switch:         node:1308 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.278601067: sched_wakeup:         node:1307 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.278610037: sched_switch:         swapper/0:0 [120] R ==> node:1307 [120]
+            node-1307  [000] 19960.278615407: sched_switch:         node:1307 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.282285895: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.282317422: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.282361172: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.282367972: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.282507212: sched_wakeup:         node:1289 [120] success=1 CPU:000
+            node-1275  [000] 19960.282508562: sched_switch:         node:1275 [120] R ==> node:1289 [120]
+            node-1289  [000] 19960.282512532: sched_switch:         node:1289 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.282514472: sched_wakeup:         node:1289 [120] success=1 CPU:000
+            node-1275  [000] 19960.282516687: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+            node-1275  [000] 19960.282516794: sched_switch:         node:1275 [120] R ==> node:1289 [120]
+            node-1289  [000] 19960.282516829: sched_switch:         node:1289 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19960.282532376: sched_switch:         trace-cmd:4768 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.282621506: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19960.282625266: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.282696875: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.282810975: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19960.282812705: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.282877385: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.282892045: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.283187667: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.283217464: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.283246384: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.283252374: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.283299846: sched_wakeup:         node:1280 [120] success=1 CPU:000
+            node-1275  [000] 19960.283300936: sched_switch:         node:1275 [120] R ==> node:1280 [120]
+            node-1280  [000] 19960.283304396: sched_switch:         node:1280 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.283306116: sched_wakeup:         node:1280 [120] success=1 CPU:000
+            node-1275  [000] 19960.283306586: sched_switch:         node:1275 [120] R ==> node:1280 [120]
+            node-1280  [000] 19960.283310096: sched_switch:         node:1280 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.283311706: sched_wakeup:         node:1280 [120] success=1 CPU:000
+            node-1275  [000] 19960.283312206: sched_switch:         node:1275 [120] R ==> node:1280 [120]
+            node-1280  [000] 19960.283341356: sched_switch:         node:1280 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.283376456: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.287453791: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.287465631: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.287498541: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.310938545: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.310976235: sched_switch:         swapper/0:0 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.311074445: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19960.311082575: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.311265765: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+            node-1275  [000] 19960.311267775: sched_switch:         node:1275 [120] R ==> sshd:1181 [120]
+            sshd-1181  [000] 19960.311332015: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19960.311350465: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.318688232: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.318701472: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.318711472: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.350480948: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.350490398: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.350554147: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.351179697: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.351184697: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.351202947: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.368803822: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.368814502: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.368821302: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.420335304: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.420351114: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.420362014: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.470456346: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.470469416: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.470479446: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.471696162: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.471706082: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.471801181: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.473404356: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.473406656: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.473410506: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.473431673: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.473432593: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.473434243: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.474809236: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.474839134: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.474916610: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.501698528: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.501904192: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.501963321: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+        cpptools-19776 [000] 19960.502140402: sched_switch:         cpptools:19776 [120] S ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19960.502216936: sched_switch:         trace-cmd:4768 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.507572409: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.507640746: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.507859092: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19960.507964744: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19960.508063757: sched_switch:         cpptools-srv:19803 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.520582881: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.520600861: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.520612331: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.571002984: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.571177814: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.571276839: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.621361814: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.621378044: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.621389204: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.653231667: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.653242385: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.653242598: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.671444919: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.671453369: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.671461649: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.672808811: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.672818101: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.672918451: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.673441691: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.673443521: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.673446991: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.674453486: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.674456296: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.674460546: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.675435616: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.675437636: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.675439406: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.722427968: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.722445048: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.722457338: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.772568641: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.772585451: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.772596821: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.803347719: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.803364959: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.803423079: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.822685544: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.822701574: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.822714144: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.872820104: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.872833064: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.872843734: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.874400937: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.874410367: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19960.874511757: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.874513629: sched_wakeup:         kworker/0:1:18 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.874513665: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.874513683: sched_switch:         swapper/0:0 [120] R ==> kworker/0:1:18 [120]
+     kworker/0:1-18    [000] 19960.874513718: sched_switch:         kworker/0:1:18 [120] W ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.874513772: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.875433363: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.875434923: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.875437393: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.876862251: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.876892441: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19960.876967776: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.916040574: sched_wakeup:         lighttpd:613 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.916056434: sched_switch:         swapper/0:0 [120] R ==> lighttpd:613 [120]
+        lighttpd-613   [000] 19960.916072214: sched_switch:         lighttpd:613 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.922923015: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.922947575: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.922955045: sched_switch:         swapper/0:0 [120] R ==> trace-cmd:4768 [120]
+       trace-cmd-4768  [000] 19960.923005185: sched_switch:         trace-cmd:4768 [120] S ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.923014025: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.953528420: sched_wakeup:         cpptools:19776 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.953545460: sched_switch:         swapper/0:0 [120] R ==> cpptools:19776 [120]
+        cpptools-19776 [000] 19960.953570450: sched_switch:         cpptools:19776 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.973097224: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.973109134: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19960.973118564: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19960.978769912: sched_wakeup:         node:1234 [120] success=1 CPU:000
+          <idle>-0     [000] 19960.978779362: sched_switch:         swapper/0:0 [120] R ==> node:1234 [120]
+            node-1234  [000] 19960.978792652: sched_switch:         node:1234 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.008029785: sched_wakeup:         cpptools:19775 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.008032095: sched_wakeup:         cpptools-srv:19803 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.008046415: sched_switch:         swapper/0:0 [120] R ==> cpptools:19775 [120]
+        cpptools-19775 [000] 19961.008060215: sched_switch:         cpptools:19775 [120] S ==> cpptools-srv:19803 [120]
+    cpptools-srv-19803 [000] 19961.008069445: sched_switch:         cpptools-srv:19803 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.012691258: sched_wakeup:         connmand:512 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.012702828: sched_switch:         swapper/0:0 [120] R ==> connmand:512 [120]
+        connmand-512   [000] 19961.012976221: sched_switch:         connmand:512 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.013443382: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.013445492: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.013448912: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.014439249: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.014441789: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.014445949: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.015448023: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.015453293: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.015456613: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.023200325: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.023216655: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19961.023227675: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.073308846: sched_wakeup:         tcf-agent:637 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.073322556: sched_switch:         swapper/0:0 [120] R ==> tcf-agent:637 [120]
+       tcf-agent-637   [000] 19961.073332676: sched_switch:         tcf-agent:637 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.075842442: sched_wakeup:         node:1275 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.075854282: sched_switch:         swapper/0:0 [120] R ==> node:1275 [120]
+            node-1275  [000] 19961.075956352: sched_switch:         node:1275 [120] S ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.076440157: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.076441907: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.076445067: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.077452979: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.077454379: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.077456779: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.078433687: sched_wakeup:         rcu_preempt:10 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.078435567: sched_switch:         swapper/0:0 [120] R ==> rcu_preempt:10 [120]
+     rcu_preempt-10    [000] 19961.078436967: sched_switch:         rcu_preempt:10 [120] W ==> swapper/0:0 [120]
+          <idle>-0     [000] 19961.097139200: sched_wakeup:         rngd:509 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.097164280: sched_wakeup:         sshd:1181 [120] success=1 CPU:000
+          <idle>-0     [000] 19961.097204010: sched_switch:         swapper/0:0 [120] R ==> rngd:509 [120]
+            rngd-509   [000] 19961.097209800: sched_switch:         rngd:509 [120] S ==> sshd:1181 [120]
+            sshd-1181  [000] 19961.097268320: sched_wakeup:         node:1275 [120] success=1 CPU:000
+            sshd-1181  [000] 19961.097275090: sched_switch:         sshd:1181 [120] S ==> node:1275 [120]
+            node-1275  [000] 19961.097426060: sched_wakeup:         kworker/u2:0:2056 [120] success=1 CPU:000
+            node-1275  [000] 19961.097427410: sched_switch:         node:1275 [120] R ==> kworker/u2:0:2056 [120]
+    kworker/u2:0-2056  [000] 19961.097434590: sched_wakeup:         trace-cmd:4768 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19961.097435840: sched_wakeup:         trace-cmd:4767 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19961.097438580: sched_wakeup:         kworker/u2:1:57 [120] success=1 CPU:000
+    kworker/u2:0-2056  [000] 19961.097441100: sched_switch:         kworker/u2:0:2056 [120] W ==> trace-cmd:4768 [120]

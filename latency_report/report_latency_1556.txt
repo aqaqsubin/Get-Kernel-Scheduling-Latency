@@ -1,0 +1,415 @@
+cpus=1
+      cyclictest-4773  [000] 19972.906883490: sched_switch:         cyclictest:4773 [120] S ==> cyclictest:4774 [120]
+      cyclictest-4774  [000] 19972.906883579: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.907942283: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.907945433: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.150 usecs
+      cyclictest-4774  [000] 19972.907946083: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.907947683: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.909155646: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.909256047: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 100.401 usecs
+      cyclictest-4774  [000] 19972.909286457: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.909342905: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.910194511: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.910441813: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 247.302 usecs
+      cyclictest-4774  [000] 19972.910453798: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.910454748: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.911121987: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.911303855: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 181.868 usecs
+      cyclictest-4774  [000] 19972.911329370: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.911376687: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.911949629: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.912051378: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 101.749 usecs
+      cyclictest-4774  [000] 19972.912052248: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.912053528: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.913189493: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.913363455: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 173.962 usecs
+      cyclictest-4774  [000] 19972.913384007: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.913422243: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.914120788: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.914290306: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 169.518 usecs
+      cyclictest-4774  [000] 19972.914314173: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.914358581: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.914954260: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.914961600: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.340 usecs
+      cyclictest-4774  [000] 19972.914962400: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.914963850: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.915943641: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.915949571: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.930 usecs
+      cyclictest-4774  [000] 19972.915950051: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.915950931: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.916951244: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.917071654: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 120.410 usecs
+      cyclictest-4774  [000] 19972.917072514: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.917074154: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.918054755: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19972.918156587: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120] Latency: 101.832 usecs
+     rcu_preempt-10    [000] 19972.918637667: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120]
+      cyclictest-4774  [000] 19972.918638867: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.918643067: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.918964797: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.918971007: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.210 usecs
+      cyclictest-4774  [000] 19972.918972897: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.918975947: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.919974355: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.919977395: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.040 usecs
+      cyclictest-4774  [000] 19972.919978315: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.919979905: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+       trace-cmd-4772  [000] 19972.920025725: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120]
+          <idle>-0     [000] 19972.921043119: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.921123153: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 80.034 usecs
+      cyclictest-4774  [000] 19972.921147344: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.921192548: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.922066307: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.922213071: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 146.764 usecs
+      cyclictest-4774  [000] 19972.922230379: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.922262740: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.923057175: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.923198331: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 141.156 usecs
+      cyclictest-4774  [000] 19972.923215098: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.923246218: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+            node-1275  [000] 19972.924032337: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.924275388: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 243.051 usecs
+      cyclictest-4774  [000] 19972.924293201: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.924325441: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.924956214: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.924962034: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.820 usecs
+      cyclictest-4774  [000] 19972.924962544: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.924963544: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.926318003: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.926627736: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 309.733 usecs
+      cyclictest-4774  [000] 19972.926671400: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.926752065: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.927054184: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.927414489: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 360.305 usecs
+      cyclictest-4774  [000] 19972.927424906: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.927449709: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+     rcu_preempt-10    [000] 19972.927452289: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120]
+          <idle>-0     [000] 19972.927945903: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.927949303: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.400 usecs
+      cyclictest-4774  [000] 19972.927949783: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.927950933: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.928975851: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.928978781: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 2.930 usecs
+      cyclictest-4774  [000] 19972.928979201: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.928980121: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.929976070: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.929981930: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.860 usecs
+       trace-cmd-4772  [000] 19972.930005220: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120]
+      cyclictest-4774  [000] 19972.930005960: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.930006920: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.930950717: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.930958037: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.320 usecs
+      cyclictest-4774  [000] 19972.930958807: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.930960227: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.931943415: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.931948955: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.540 usecs
+      cyclictest-4774  [000] 19972.931949405: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.931950305: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+            node-1275  [000] 19972.932968298: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.933024508: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 56.210 usecs
+      cyclictest-4774  [000] 19972.933025438: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.933026498: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.933945446: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.933951306: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.860 usecs
+      cyclictest-4774  [000] 19972.933951836: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.933952796: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.934942644: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.934948094: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.450 usecs
+      cyclictest-4774  [000] 19972.934948504: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.934949304: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.935942530: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.935947890: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.360 usecs
+      cyclictest-4774  [000] 19972.935948300: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.935949080: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.937383397: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.938024303: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 640.906 usecs
+      cyclictest-4774  [000] 19972.938036811: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.938059739: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.939144622: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.939289229: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 144.607 usecs
+      cyclictest-4774  [000] 19972.939332980: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.939413778: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.940141479: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.940283071: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 141.592 usecs
+      cyclictest-4774  [000] 19972.940325608: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.940404513: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.941158262: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.941414454: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 256.192 usecs
+      cyclictest-4774  [000] 19972.941450332: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.941669322: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.941964786: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.941970416: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.630 usecs
+      cyclictest-4774  [000] 19972.941971156: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.941972186: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.943219837: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.943599067: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 379.230 usecs
+      cyclictest-4774  [000] 19972.943599987: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.943601017: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.944159396: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.944386603: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 227.207 usecs
+      cyclictest-4774  [000] 19972.944418421: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.944450574: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.945108199: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.945341112: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 232.913 usecs
+      cyclictest-4774  [000] 19972.945373717: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.945434727: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.946103540: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.946330949: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 227.409 usecs
+      cyclictest-4774  [000] 19972.946362767: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.946421915: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.947155668: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.947370595: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 214.927 usecs
+      cyclictest-4774  [000] 19972.947400676: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.947448740: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.948198436: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.948514887: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 316.451 usecs
+      cyclictest-4774  [000] 19972.948515877: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.948517257: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.949148595: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.949259074: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 110.479 usecs
+      cyclictest-4774  [000] 19972.949292920: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.949354638: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.950137474: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.950244047: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 106.573 usecs
+      cyclictest-4774  [000] 19972.950276262: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.950335981: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.951131048: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.951234762: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 103.714 usecs
+      cyclictest-4774  [000] 19972.951266008: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.951324056: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.952121098: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.952315083: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 193.985 usecs
+      cyclictest-4774  [000] 19972.952342359: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.952393026: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.953134117: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.953318052: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 183.935 usecs
+      cyclictest-4774  [000] 19972.953344333: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.953392615: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.954129170: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.954307832: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 178.662 usecs
+      cyclictest-4774  [000] 19972.954333342: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.954380147: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.955112366: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.955282994: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 170.628 usecs
+      cyclictest-4774  [000] 19972.955307308: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.955351823: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.955943773: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.955949733: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.960 usecs
+      cyclictest-4774  [000] 19972.955950203: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.955951153: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.956970912: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.956977612: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.700 usecs
+      cyclictest-4774  [000] 19972.956978052: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.956979032: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.957943347: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.957949177: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.830 usecs
+      cyclictest-4774  [000] 19972.957949607: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.957950517: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.959055500: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            sshd-1181  [000] 19972.959617800: sched_switch:         sshd:1181 [120] S ==> cyclictest:4774 [120] Latency: 562.300 usecs
+      cyclictest-4774  [000] 19972.959618910: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.959620290: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.959950088: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.960092684: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 142.596 usecs
+      cyclictest-4774  [000] 19972.960093754: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.960095194: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.961111129: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.961190654: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 79.525 usecs
+      cyclictest-4774  [000] 19972.961214892: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.961260262: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.961945077: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.961951377: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.300 usecs
+      cyclictest-4774  [000] 19972.961951937: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.961953247: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+       trace-cmd-4772  [000] 19972.961988957: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120]
+          <idle>-0     [000] 19972.962944260: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.962950420: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.160 usecs
+      cyclictest-4774  [000] 19972.962950960: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.962952030: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.963943203: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.963949013: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.810 usecs
+      cyclictest-4774  [000] 19972.963949413: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.963950263: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.964943061: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.964946511: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.450 usecs
+      cyclictest-4774  [000] 19972.964946971: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.964947731: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+            node-1275  [000] 19972.966049408: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            sshd-1181  [000] 19972.966489433: sched_switch:         sshd:1181 [120] S ==> cyclictest:4774 [120] Latency: 440.025 usecs
+      cyclictest-4774  [000] 19972.966490583: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.966491953: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.966954699: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.966961289: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.590 usecs
+      cyclictest-4774  [000] 19972.966962209: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.966963759: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.967945561: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.967951601: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.040 usecs
+      cyclictest-4774  [000] 19972.967952111: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.967953061: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.968944185: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.968950045: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.860 usecs
+      cyclictest-4774  [000] 19972.968950495: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.968951355: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+      cyclictest-4773  [000] 19972.969973873: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.970017053: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 43.180 usecs
+      cyclictest-4774  [000] 19972.970017933: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.970019103: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.970977688: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.970980818: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.130 usecs
+      cyclictest-4774  [000] 19972.970981328: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.970982378: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.971976646: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.971979806: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.160 usecs
+      cyclictest-4774  [000] 19972.971980556: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.971981506: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.972976295: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.972982905: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.610 usecs
+      cyclictest-4774  [000] 19972.972983745: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.972985035: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.973947719: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.973954739: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.020 usecs
+      cyclictest-4774  [000] 19972.973955419: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.973956879: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.974943806: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.974947496: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.690 usecs
+      cyclictest-4774  [000] 19972.974948026: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.974948896: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.975955297: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.975962604: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.307 usecs
+      cyclictest-4774  [000] 19972.975963554: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.975965214: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.976954673: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.977071185: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 116.512 usecs
+      cyclictest-4774  [000] 19972.977072245: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.977073615: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.978311816: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.978609996: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 298.180 usecs
+      cyclictest-4774  [000] 19972.978639924: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.978695362: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.978966281: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.978972391: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.110 usecs
+      cyclictest-4774  [000] 19972.978972941: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.978973751: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.979952165: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.979957875: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 5.710 usecs
+      cyclictest-4774  [000] 19972.979958745: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.979960345: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.981181274: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19972.981804694: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120] Latency: 623.420 usecs
+      cyclictest-4774  [000] 19972.981843851: sys_exit_clock_nanosleep: 0x0
+       trace-cmd-4772  [000] 19972.981960516: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120]
+      cyclictest-4774  [000] 19972.981989381: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.983138223: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.983395808: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 257.585 usecs
+      cyclictest-4774  [000] 19972.983431897: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.983665210: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.984128969: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.984378805: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 249.836 usecs
+      cyclictest-4774  [000] 19972.984413821: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.984453779: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.985128295: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            sshd-1181  [000] 19972.986239137: sched_switch:         sshd:1181 [120] S ==> cyclictest:4774 [120] Latency: 1110.842 usecs
+      cyclictest-4774  [000] 19972.986246025: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.986258581: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.986952404: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.986956504: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 4.100 usecs
+      cyclictest-4774  [000] 19972.986957594: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.986959184: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.987953154: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.987961214: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 8.060 usecs
+      cyclictest-4774  [000] 19972.987962154: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.987963704: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.989245153: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.989442123: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 196.970 usecs
+      cyclictest-4774  [000] 19972.989456017: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.989457097: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.990144021: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            node-1275  [000] 19972.990543511: sched_switch:         node:1275 [120] S ==> cyclictest:4774 [120] Latency: 399.490 usecs
+      cyclictest-4774  [000] 19972.990544521: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.990545641: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.991142294: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.991250609: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 108.315 usecs
+      cyclictest-4774  [000] 19972.991283342: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.991343950: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+        cpptools-19776 [000] 19972.992078015: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+        cpptools-19776 [000] 19972.992458343: sched_switch:         cpptools:19776 [120] S ==> cyclictest:4774 [120] Latency: 380.328 usecs
+     rcu_preempt-10    [000] 19972.992471113: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120]
+      cyclictest-4774  [000] 19972.992471613: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.992472993: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+       trace-cmd-4772  [000] 19972.992520343: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120]
+          <idle>-0     [000] 19972.993135217: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.993238371: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 103.154 usecs
+      cyclictest-4774  [000] 19972.993269445: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.993327134: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.994123910: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.994308676: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 184.766 usecs
+      cyclictest-4774  [000] 19972.994334540: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.994382733: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.995119666: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.995298388: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 178.722 usecs
+      cyclictest-4774  [000] 19972.995323469: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.995369972: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+            node-1275  [000] 19972.996065796: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            sshd-1181  [000] 19972.996519475: sched_switch:         sshd:1181 [120] S ==> cyclictest:4774 [120] Latency: 453.679 usecs
+      cyclictest-4774  [000] 19972.996520485: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.996521845: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.996945502: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.996952192: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.690 usecs
+      cyclictest-4774  [000] 19972.996953072: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.996954502: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.997946184: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.997952524: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.340 usecs
+      cyclictest-4774  [000] 19972.997953094: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.997954074: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.998943654: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.998949764: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.110 usecs
+      cyclictest-4774  [000] 19972.998950254: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.998951184: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19972.999943783: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19972.999949873: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.090 usecs
+      cyclictest-4774  [000] 19972.999950343: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19972.999951223: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.001035179: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+     rcu_preempt-10    [000] 19973.001459412: sched_switch:         rcu_preempt:10 [120] W ==> cyclictest:4774 [120] Latency: 424.233 usecs
+      cyclictest-4774  [000] 19973.001460272: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.001461562: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.001946250: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.001950040: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 3.790 usecs
+      cyclictest-4774  [000] 19973.001950550: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.001951660: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.003080313: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+       trace-cmd-4772  [000] 19973.003272039: sched_switch:         trace-cmd:4772 [120] S ==> cyclictest:4774 [120] Latency: 191.726 usecs
+      cyclictest-4774  [000] 19973.003292990: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.003331592: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.003950961: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.003958591: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.630 usecs
+      cyclictest-4774  [000] 19973.003959381: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.003960711: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.004945231: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.004951931: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.700 usecs
+      cyclictest-4774  [000] 19973.004952461: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.004953501: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.005944268: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.005950718: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.450 usecs
+      cyclictest-4774  [000] 19973.005951218: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.005952178: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.007029925: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+            sshd-1181  [000] 19973.007496515: sched_switch:         sshd:1181 [120] S ==> cyclictest:4774 [120] Latency: 466.590 usecs
+      cyclictest-4774  [000] 19973.007497675: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.007499035: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.007946735: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.007953995: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 7.260 usecs
+      cyclictest-4774  [000] 19973.007954945: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.007956475: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.008946845: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.008953645: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.800 usecs
+      cyclictest-4774  [000] 19973.008954195: sys_exit_clock_nanosleep: 0x0
+      cyclictest-4774  [000] 19973.008955375: sys_enter_clock_nanosleep: which_clock: 0x00000001, flags: 0x00000001, rqtp: 0x7f20bffc6930, rmtp: 0x00000000
+          <idle>-0     [000] 19973.009944219: sched_wakeup:         cyclictest:4774 [120] success=1 CPU:000
+          <idle>-0     [000] 19973.009950719: sched_switch:         swapper/0:0 [120] R ==> cyclictest:4774 [120] Latency: 6.500 usecs
+      cyclictest-4774  [000] 19973.009951249: sys_exit_clock_nanosleep: 0x0
+
+Average wakeup latency: 136.384 usecs
+Maximum Latency: 1110.842 usecs at timestamp: 19972.986239
+Minimum Latency: 2.930 usecs at timestamp: 19972.928979
+
