@@ -4,12 +4,12 @@ Get Kernel Scheduling Latency using cyclictest
 
 ### cyclictest 설치
 
-`$ git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git`
-`$ cd rt-tests`
-`$ git checkout stable/v1.0`
+`$ git clone git://git.kernel.org/pub/scm/utils/rt-tests/rt-tests.git`  
+`$ cd rt-tests`  
+`$ git checkout stable/v1.0`  
 
-`$ make all`
-`$ make install`
+`$ make all`  
+`$ make install`  
   
 
 ### KernelShark 1.0 설치
